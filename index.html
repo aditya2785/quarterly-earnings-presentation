@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>QnX Quarterly Earnings — Reveal.js</title>
+
+  <!-- Reveal.js core (CDN) -->
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@4/dist/reveal.css">
+  <link rel="stylesheet" href="https://unpkg.com/reveal.js@4/dist/theme/black.css" id="theme">
+
+  <!-- Highlight.js for code highlighting -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/default.min.css">
+
+  <style>
+    /* small custom styling */
+    .company-email { font-weight: bold; color: #ffcc00; }
+    .metric { font-size: 1.6rem; }
+  </style>
+</head>
+<body>
+  <div class="reveal">
+    <div class="slides">
+      <!-- Slide 1: Title (HTML) -->
+      <section>
+        <h1>QnX Financial — Quarterly Earnings Report</h1>
+        <h3>FY Quarter: Q3</h3>
+        <p class="company-email">Contact: 24f2005506@ds.study.iitm.ac.in</p>
+        <aside class="notes">
+          Speaker notes: Welcome everyone. Introduce yourself, mention the email for follow-up questions.
+        </aside>
+      </section>
+
+      <!-- Slide 2: Markdown slide loaded inline via data-markdown -->
+      <section data-markdown>
+        <textarea data-template>
+## Highlights (Markdown slide)
+
+- **Revenue:** ₹1,250 Cr (YoY +12.3%)
+- **Net Profit:** ₹210 Cr (YoY +9.7%)
+- **EPS:** ₹12.4
+
+### Key points
+1. Revenue growth driven by digital products.
+2. Cost optimisation improved margin by **80 bps**.
+3. Guidance: moderate growth in next quarter.
+
+<aside class="notes">
+Speaker notes:
+- Emphasize product-led growth and margin improvement.
+- Invite questions at the end of the deck; remind them of the contact email: 24f2005506@ds.study.iitm.ac.in
+</aside>
+        </textarea>
+      </section>
+
+      <!-- Slide 3: Animated fragments -->
+      <section>
+        <h2>Revenue Breakdown</h2>
+        <ul>
+          <li class="fragment fade-in">Product A — 45% of revenue</li>
+          <li class="fragment fade-in">Product B — 30% of revenue</li>
+          <li class="fragment fade-in">Services & Others — 25% of revenue</li>
+        </ul>
+        <aside class="notes">
+          Move progressively through fragments; click to reveal each bullet.
+        </aside>
+      </section>
+
+      <!-- Slide 4: Financial formula (MathJax) -->
+      <section>
+        <h2>Key Financial Formula</h2>
+        <p>Return on Equity (ROE):</p>
+        <p class="fragment">
+          $$ \mathrm{ROE} = \frac{\mathrm{Net\ Income}}{\mathrm{Shareholders'\ Equity}} = \frac{NI}{E} $$
+        </p>
+
+        <p class="fragment">
+          DuPont decomposition:
+          $$ \mathrm{ROE} = \mathrm{Profit\ Margin} \times \mathrm{Asset\ Turnover} \times \mathrm{Equity\ Multiplier} $$
+          $$ \mathrm{ROE} = \left(\frac{NI}{Revenue}\right)\left(\frac{Revenue}{Assets}\right)\left(\frac{Assets}{Equity}\right) $$
+        </p>
+
+        <aside class="notes">
+          Explain DuPont: how margin, turnover and leverage combine to drive ROE.
+        </aside>
+      </section>
+
+      <!-- Slide 5: Code sample with syntax highlighting -->
+      <section>
+        <h2>Example: Calculating CAGR (Python)</h2>
+
+        <pre><code class="language-python">
+# CAGR calculation
+def cagr(begin_value, end_value, periods):
+    return (end_value / begin_value) ** (1.0 / periods) - 1
+
+# Example
+start = 100
+end = 150
+years = 3
+print(f"CAGR: {cagr(start, end, years):.4%}")
+        </code></pre>
+
+        <aside class="notes">
+          Quick demo slide — show code and explain CAGR (Compound Annual Growth Rate). Consider running snippet in a notebook.
+        </aside>
+      </section>
+
+      <!-- Slide 6: Table (Markdown) -->
+      <section data-markdown>
+        <textarea data-template>
+## Consolidated P&L (₹ Cr)
+
+| Item | Q3 FY | Q2 FY | QoQ |
+|---:|---:|---:|---:|
+| Revenue | 1,250 | 1,180 | +5.9% |
+| EBITDA | 320 | 300 | +6.7% |
+| Net Profit | 210 | 200 | +5.0% |
+
+<aside class="notes">
+Point out QoQ trends and drivers: cost, product mix.
+</aside>
+        </textarea>
+      </section>
+
+      <!-- Slide 7: Closing with a call to action and contact -->
+      <section>
+        <h2>Questions & Next Steps</h2>
+        <p>Contact for follow-up: <span class="company-email">24f2005506@ds.study.iitm.ac.in</span></p>
+
+        <p class="fragment">Share detailed model after requests.</p>
+        <p class="fragment">Request deeper metrics from finance team to prepare the appendix.</p>
+
+        <aside class="notes">
+          Thank the stakeholders. Mention you will upload the full model and supporting docs to the repo.
+        </aside>
+      </section>
+    </div>
+  </div>
+
+  <!-- Reveal.js and plugins -->
+  <script src="https://unpkg.com/reveal.js@4/dist/reveal.js"></script>
+
+  <!-- Markdown plugin -->
+  <script src="https://unpkg.com/reveal.js@4/plugin/markdown/markdown.esm.js"></script>
+
+  <!-- Notes plugin -->
+  <script src="https://unpkg.com/reveal.js@4/plugin/notes/notes.esm.js"></script>
+
+  <!-- Math (MathJax) integration for Reveal -->
+  <script>
+    // Enable MathJax for Reveal
+    window.MathJax = {
+      tex: { inlineMath: [['$','$'], ['\\(','\\)']], displayMath: [['$$','$$']] },
+      svg: { fontCache: 'global' }
+    };
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js" async></script>
+
+  <!-- Highlight.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+
+  <script>
+    Reveal.initialize({
+      hash: true,
+      plugins: [ RevealMarkdown, RevealNotes ],
+      markdown: {
+        smartypants: true
+      },
+      math: {
+        mathjax: 'https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js'
+      },
+      slideNumber: true,
+      // Setup highlight after reveal initializes
+      dependencies: [
+        { src: 'https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js', async: true, callback: function(){ document.querySelectorAll('pre code').forEach((el)=>hljs.highlightElement(el)); } }
+      ]
+    });
+  </script>
+</body>
+</html>
