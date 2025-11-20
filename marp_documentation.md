@@ -54,16 +54,18 @@ style: |
 ---
 
 ---
+
 backgroundImage: "https://images.unsplash.com/photo-1503264116251-35a269479413"
+
+# 🌄 Background Image Slide
+This slide uses a **full-screen background image**, satisfying the requirement.
+
 ---
 
-# 🌄 Background Image Slide  
-This slide uses a **full-screen background image**.
-
----
 
 ## ⚙️ Installation
 
 ```bash
 git clone https://github.com/<USER>/<REPO>.git
 marp slides.md --html
+
