@@ -38,6 +38,8 @@ style: |
 <span class="accent"></span>
 
 **Technical Writer:** 24f2005506@ds.study.iitm.ac.in
+**Email:** 24f2005506@ds.study.iitm.ac.in
+
 
 ---
 
