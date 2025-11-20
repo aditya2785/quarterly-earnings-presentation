@@ -4,7 +4,6 @@ paginate: true
 theme: default
 
 style: |
-  /* --- Custom Theme CSS --- */
   section {
     font-family: 'Inter', sans-serif;
     padding: 40px;
@@ -59,16 +58,12 @@ backgroundImage: "https://images.unsplash.com/photo-1503264116251-35a269479413"
 ---
 
 # 🌄 Background Image Slide  
-This slide uses a **full-screen background image**, satisfying the requirement.
+This slide uses a **full-screen background image**.
 
 ---
 
 ## ⚙️ Installation
 
 ```bash
-# Clone the repository
 git clone https://github.com/<USER>/<REPO>.git
-
-# Preview using Marp CLI
 marp slides.md --html
-
