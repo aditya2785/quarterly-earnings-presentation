@@ -54,13 +54,14 @@ style: |
 
 ---
 
-<!-- backgroundImage: url("https://images.unsplash.com/photo-1503264116251-35a269479413") -->
+<!-- backgroundImage: "https://images.unsplash.com/photo-1503264116251-35a269479413" -->
 <!-- _class: bg-cover -->
 
 # 🌄 Background Image Slide  
 This slide uses a **full-screen background image**, satisfying the requirement.
 
 ---
+
 
 ## ⚙️ Installation
 
